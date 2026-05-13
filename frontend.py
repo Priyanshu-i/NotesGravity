@@ -3,7 +3,7 @@ import requests
 import time
 from gradio_client import Client
 
-ICON_URL = "https://i.postimg.cc/mrzQQ23m/notes-Gravity.png"
+ICON_URL = "https://i.postimg.cc/Bb8qjwPh/notes-Gravity-(1).png"
 
 st.set_page_config(
     page_title="NotesGravity AI",
@@ -69,7 +69,7 @@ with st.spinner("Connecting to Cloud API... (This might take a few seconds)"):
 
 with st.sidebar:
     st.image(
-        "https://i.postimg.cc/mrzQQ23m/notes-Gravity.png", width=210
+        ICON_URL, width=210
     )  # Custom logo
     st.title("⚙️ Model Settings")
     st.markdown("Fine-tune how NotesGravity generates your notes.")
@@ -122,7 +122,7 @@ try:
         st.markdown(
             f"""
             <h1 style="display:flex; align-items:center;">
-                <img src="{ICON_URL}" width="75" style="margin-right:-20px;">
+                <img src="{ICON_URL}" width="75" style="margin-right:-22px;">
                 otesGravity AI
             </h1>
             """,
